@@ -2,12 +2,12 @@ import requests
 import telebot
 from telebot import types
 from joker import Tele 
-token = "6776091474:AAE6VelveSqqt4rfYcqRENMBCPUEe64TApg" #التوكن هنا 
+token = "6541143936:AAGrJs7SLCXBRoGcfkiG_e92xdRwC7hocDE" #التوكن هنا 
 bot=telebot.TeleBot(token,parse_mode="HTML")
 
 @bot.message_handler(commands=["start"])
 def start(message):
-	bot.reply_to(message,"Send the file now \n ارسل الملف الان")
+	bot.reply_to(message,"Send CC.txt")
 @bot.message_handler(content_types=["document"])
 def main(message):
 	dd = 0
@@ -62,7 +62,7 @@ def main(message):
 				cm5 = types.InlineKeyboardButton(f"• TOTAL 👻 : [ {total} ] •", callback_data='x')
 				mes.add(hh,cm1, cm2, cm3, cm4, cm5)
 				bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='''Wait for processing 
-𝒃𝒚 ➜ @X1_H9 ''', reply_markup=mes)
+𝒃𝒚 ➜ @TeamRood ''', reply_markup=mes)
 				
 				try:
 					last = str(Tele(cc))
@@ -84,7 +84,7 @@ def main(message):
 ◆ 𝑩𝑨𝑵𝑲 ➜ {bank}
 ◆ 𝑼𝑹𝑳 ➜ {url}
 ━━━━━━━━━━━━━━━━━
-◆ 𝑩𝒀: @X1_H9
+◆ 𝑩𝒀: @TeamRood
 ◆𝑷𝑹𝑶𝑿𝒀𝑺: 𝑷𝑹𝑶𝑿𝒀 𝑳𝑰𝑽𝑬 ✅ '''
 				print(last)
 				if "Card Issuer Declined CVV" in last:
@@ -105,7 +105,7 @@ def main(message):
 ◆ 𝑩𝑨𝑵𝑲 ➜ {bank}
 ◆ 𝑼𝑹𝑳 ➜ {url}
 ━━━━━━━━━━━━━━━━━
-◆ 𝑩𝒀: @X1_H9
+◆ 𝑩𝒀: @TeamRood
 ◆ 𝑷𝑹𝑶𝑿𝒀𝑺: 𝑷𝑹𝑶𝑿𝒀 𝑳𝑰𝑽𝑬 ✅ '''
 					bot.reply_to(message, msg1)
 				else:
