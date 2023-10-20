@@ -2,7 +2,7 @@ import requests
 import telebot
 from telebot import types
 from joker import Tele 
-token = "6541143936:AAGrJs7SLCXBRoGcfkiG_e92xdRwC7hocDE" #التوكن هنا 
+token = "6776091474:AAE6VelveSqqt4rfYcqRENMBCPUEe64TApg" #التوكن هنا 
 bot=telebot.TeleBot(token,parse_mode="HTML")
 
 @bot.message_handler(commands=["start"])
