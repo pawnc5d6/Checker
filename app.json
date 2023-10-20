@@ -1,12 +1,7 @@
 {
-  "name": "vcbot",
+  "name": "RoodChecker Bot",
   "description": "Telegram Bot deployed on Heroku",
-  "repository": "https://github.com/pawnc5d6/public",
-  "env": {
-    "BOT_TOKEN": {
-      "description": "Telegram bot token",
-      "required": false
-    }
+  "repository": "https://github.com/pawnc5d6/Checker",
   },
   "scripts": {
     "start": "python main.py"
